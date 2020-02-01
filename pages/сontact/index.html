@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset=UTF-8>
-  <title>Category Products</title>
+  <title>Contact us</title>
 </head>
 <body>
   <header class="header">
@@ -12,30 +12,29 @@
       </a>
       <ul class="list hidden-marker">
         <li> 
-          <a class="nav-item" href="#">Blog </a> 
+          <a class="nav-item" href="#">Blog </a>
         </li>
         <li> 
-          <a class="nav-item" href="#">Catalog </a>
+          <a class="nav-item" href="./../category/index.html">Catalog </a> 
         </li>
-        <li>
-          <a class="nav-item" href="#">About Us </a> 
+        <li> 
+          <a class="nav-item" href="#">About Us </a>
         </li>
       </ul>
       <ul class="list hidden-marker">
         <li> 
-          <button class="search-button"> 
-          <img class="search-img" src="./../../images/search.svg" alt="search">
+          <button class="search-button"> <img class="search-img" src="./../../images/search.svg" alt="search">
           </button>
         </li>
         <li> 
-          <a class="contact-link" href="./../сontact/index.html">Contact Us</a> 
+          <a class="contact-link" href="index.html">Contact Us</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main category-products">
-    <h1>Category Products</h1>
-    <div class="category products-breadcrumbs">
+  <main class="main contact">
+    <h1 class="contact-title"> Contact Us </h1>
+    <div class="contact-breadcrumbs">
       <ol class="breadcrumbs">
         <li>
           <a href="./../../index.html"> Home </a>
@@ -43,62 +42,43 @@
         <li>
           <img class="breadcrums-item" src="./../../images/bread.svg" alt="&#62;">
         </li>
-        <li class="active">Catalog </li>
+        <li class="active">Contact us </li>
       </ol>
     </div>
-    <section class="category">
-      <h2 class="visually-hidden"> Category Products </h2>
-      <div class="category-list">
-        <ul class="list hidden-marker">
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-1.jpg" alt="APPAREL KIDS">
-              <div class="category-text">APPAREL KIDS</div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-2.jpg" alt="HOLIDAY SHOP">
-              <div class="category-title">HOLIDAY SHOP </div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-3.jpg" alt="TOYS">
-              <div class="category-title">TOYS</div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-4.jpg" alt="ACCESSORIES">
-              <div class="category-title">ACCESSORIES</div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-5.jpg" alt="SALE">
-              <div class="category-title">SALE</div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-6.jpg" alt="APPAREL ADULTS">
-              <div class="category-title">APPAREL ADULTS</div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="product-description">
-      <h2 class="product description-title">Product Description </h2>
-      <p class="product descriprion-text"> 
-        Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even
-        bathe her, just like a little sister.
-        A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an
-        excellent choice for a gift for a girl from 4 years old.
-        The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and
-        elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
+    <form class="contact-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST"> 
+      <p>
+        <label class="form-label" for="input-name"> Name </label>
+        <input class="form-input" name="name" id="input-name" type="text">
       </p>
+      <p>
+        <label class="form-label" for="input-phone"> Phone </label>
+        <input class="form-input" name="phone" id="input-phone" type="tel">
+      </p>
+      <p>
+        <label class="form-label" for="input-mail"> Email </label>
+        <input class="form-input" name="email" id="input-mail" type="text">
+      </p>
+      <p>
+        <label class="form-label" for="input-massage"> Message </label>
+        <textarea class="textarea-massage" name="message" id="input-massage" cols="30" rows="10"> </textarea>
+      </p>
+      <fieldset>
+        <input class="chechbox form-input" id="input-accept" name="accept" type="checkbox">
+        <label class="chechbox form-label" for="input-accept"> 
+          By clicking on the button, you consent to the processing of your personal data
+        </label>
+      </fieldset>
+      <button class="contact-button"> Submit </button>
+    </form>
+    <section class="contact-title">
+      <h2 class="visually-hidden"> Contact us</h2>
+      <p class="contact-text"> 
+        Our support team are on-hand to assist with any issues you are experiencing. 
+        Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. 
+      </p>
+      <div class="add contact-text">
+        An expert is waiting to help you!
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -175,7 +155,7 @@
         </li>
         <li class="social-item">
           <a class='social-item' href="#">
-            <img class="mail-img" src="./../../images//Pinterest.svg" alt="pinterest">
+            <img class="mail-img" src="./../../images/Pinterest.svg" alt="pinterest">
           </a>
         </li>
         <li class="social-item">
@@ -209,5 +189,3 @@
     </div>
     <a class="footer-designed" href="#"> Web Design — Direct Line Development </a>
   </footer>
-</body>
-</html>
