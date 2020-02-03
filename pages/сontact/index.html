@@ -3,6 +3,13 @@
 <head>
   <meta charset=UTF-8>
   <title>Contact us</title>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css>
+  <link rel="stylesheet" href="./../../common.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
@@ -27,7 +34,7 @@
           </button>
         </li>
         <li> 
-          <a class="contact-link" href="index.html">Contact Us</a>
+          <a class="nav-item link-contact" href="index.html">Contact Us</a>
         </li>
       </ul>
     </nav>
@@ -37,12 +44,12 @@
     <div class="contact-breadcrumbs">
       <ol class="breadcrumbs">
         <li>
-          <a href="./../../index.html"> Home </a>
+          <a class="breadcrumbs-item" href="./../../index.html"> Home </a>
         </li>
         <li>
-          <img class="breadcrums-item" src="./../../images/bread.svg" alt="&#62;">
+          <img class="breadcrumbs-item" src="./../../images/bread.svg" alt="&#62;">
         </li>
-        <li class="active">Contact us </li>
+        <li class="breadcrumbs-item active">Contact us </li>
       </ol>
     </div>
     <form class="contact-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST"> 
@@ -68,24 +75,24 @@
           By clicking on the button, you consent to the processing of your personal data
         </label>
       </fieldset>
-      <button class="contact-button"> Submit </button>
+      <button class="button contact-button"> Submit </button>
     </form>
-    <section class="contact-title">
+    <section class="contact-text">
       <h2 class="visually-hidden"> Contact us</h2>
-      <p class="contact-text"> 
+      <p class="contactUs-text"> 
         Our support team are on-hand to assist with any issues you are experiencing. 
         Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. 
       </p>
-      <div class="add contact-text">
+      <div class="help-text">
         An expert is waiting to help you!
       </div>
     </section>
   </main>
   <footer class="footer">
     <section class="navigation-list">
-      <h2 class="footer title-navigation"> Navigation</h2>
+      <h2 class="footer title-main"> Navigation</h2>
       <hr />
-      <ul class="list hidden-marker">
+      <ul class="hidden-marker">
         <li class="footer-item">
           <a class="footer-link" href="#"> About Us</a>
         </li>
@@ -107,9 +114,9 @@
       </ul>
     </section>
     <section class="information-list">
-      <h2 class="footer title-information">Customer Information</h2>
+      <h2 class="footer title-main">Customer Information</h2>
       <hr />
-      <ul class="list hidden-marker">
+      <ul class="hidden-marker">
         <li class="footer_item">
           <a class="footer-link" href="#">Contact Us</a>
         </li>
@@ -131,18 +138,18 @@
       </ul>
     </section>
     <section class="connect-list">
-      <h2 class="main footer title-connect">Connect </h2>
+      <h2 class="footer title-main">Connect </h2>
       <hr />
       <form class="email-form" method="POST" action="https://form-data-dl.herokuapp.com/api/messages">
         <p>
           <label for="input-email"> </label>
           <input name="email" id="input-email" placeholder="Email" type="email">
         </p>
-        <button type="submit">
+        <button class="button button-footer" type="submit">
           Join
         </button>
       </form>
-      <ul class="list hidden-marker">
+      <ul class="hidden-marker">
         <li class="social-item">
           <a class='social-item' href="#">
             <img class="mail-img" src="./../../images/Facebook.svg" alt="facebook">
@@ -167,25 +174,27 @@
     </section>
     <hr class="bottom line"/>
     <div class="rating">
-      <a class="company-rating" href="#"> Company Rating </a>
+      <a class="footer-link rating" href="#"> Company Rating </a>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
     </div>
-    <div class=footer-copyright> 
-      Copyright © 2018 Dlk • Design Life Kids 
+    <div class="footer-copyright"> 
+      Copyright © 2018 Dlk • Design Life Kids
     </div>
-    <a class="footer-designed" href="#"> Web Design — Direct Line Development </a>
+    <a class="footer-link design" href="#"> Web Design — Direct Line Development </a>
   </footer>
+</body>
+</html>

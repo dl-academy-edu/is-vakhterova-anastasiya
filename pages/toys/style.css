@@ -1,0 +1,84 @@
+/* title*/
+
+.toy-title {
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+text-transform: uppercase;   
+}
+
+/*filters*/
+
+fieldset {
+  border:0 none;
+}
+
+.filter-form {
+  background-color: rgba(125, 151, 218, 0.2);
+  border: none;
+}
+
+.filter-name {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606; 
+}
+
+.scroll {
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #1E0606; 
+}
+
+.item{
+  font-weight: normal;
+}
+
+
+/* products list */
+.product-description {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+.product-price {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+/* pagination */
+.page {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.current {
+  color: #C29974;
+}
+
+.page-change {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}

@@ -3,6 +3,10 @@
 <head>
   <meta charset=UTF-8>
   <title>Category Products</title>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Montserrat:400,600,700,800|Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css>
+  <link rel="stylesheet" href="./../../common.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
@@ -28,22 +32,22 @@
           </button>
         </li>
         <li> 
-          <a class="contact-link" href="./../сontact/index.html">Contact Us</a> 
+          <a class="nav-item link-contact" href="./../сontact/index.html">Contact Us</a> 
         </li>
       </ul>
     </nav>
   </header>
   <main class="main category-products">
-    <h1>Category Products</h1>
+    <h1 class="category-title">Category Products</h1>
     <div class="category products-breadcrumbs">
       <ol class="breadcrumbs">
         <li>
-          <a href="./../../index.html"> Home </a>
+          <a class="breadcrumbs-item" href="./../../index.html"> Home </a>
         </li>
         <li>
-          <img class="breadcrums-item" src="./../../images/bread.svg" alt="&#62;">
+          <img class="breadcrumbs-item" src="./../../images/bread.svg" alt="&#62;">
         </li>
-        <li class="active">Catalog </li>
+        <li class="breadcrumbs-item active">Catalog </li>
       </ol>
     </div>
     <section class="category">
@@ -53,49 +57,53 @@
           <li class="category-item">
             <a class="category-link" href="#">
               <img class="category-img" src="./../../images/category-1.jpg" alt="APPAREL KIDS">
-              <div class="category-text">APPAREL KIDS</div>
+              <div class="category-text">Apparel kids</div>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="#">
               <img class="category-img" src="./../../images/category-2.jpg" alt="HOLIDAY SHOP">
-              <div class="category-title">HOLIDAY SHOP </div>
+              <div class="category-text">Holiday shop </div>
             </a>
           </li>
           <li class="category-item">
-            <a class="category-link" href="#">
+            <a class="category-link" href="./../Toys/index.html">
               <img class="category-img" src="./../../images/category-3.jpg" alt="TOYS">
-              <div class="category-title">TOYS</div>
+              <div class="category-text">Toys</div>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="#">
               <img class="category-img" src="./../../images/category-4.jpg" alt="ACCESSORIES">
-              <div class="category-title">ACCESSORIES</div>
+              <div class="category-text">Accessories</div>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="#">
               <img class="category-img" src="./../../images/category-5.jpg" alt="SALE">
-              <div class="category-title">SALE</div>
+              <div class="category-text">Sale</div>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="#">
               <img class="category-img" src="./../../images/category-6.jpg" alt="APPAREL ADULTS">
-              <div class="category-title">APPAREL ADULTS</div>
+              <div class="category-text">Apparel adults</div>
             </a>
           </li>
         </ul>
       </div>
     </section>
     <section class="product-description">
-      <h2 class="product description-title">Product Description </h2>
-      <p class="product descriprion-text"> 
+      <h2 class="category-title description">Product Description </h2>
+      <p class="descriprion-text"> 
         Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even
-        bathe her, just like a little sister.
+        bathe her, just like a little sister. 
+      </p>
+      <p class="descriprion-text" >
         A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an
         excellent choice for a gift for a girl from 4 years old.
+      </p>
+      <p class="descriprion-text">
         The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and
         elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
       </p>
@@ -103,9 +111,9 @@
   </main>
   <footer class="footer">
     <section class="navigation-list">
-      <h2 class="footer title-navigation"> Navigation</h2>
+      <h2 class="footer title-main"> Navigation</h2>
       <hr />
-      <ul class="list hidden-marker">
+      <ul class="hidden-marker">
         <li class="footer-item">
           <a class="footer-link" href="#"> About Us</a>
         </li>
@@ -127,9 +135,9 @@
       </ul>
     </section>
     <section class="information-list">
-      <h2 class="footer title-information">Customer Information</h2>
+      <h2 class="footer title-main">Customer Information</h2>
       <hr />
-      <ul class="list hidden-marker">
+      <ul class="hidden-marker">
         <li class="footer_item">
           <a class="footer-link" href="#">Contact Us</a>
         </li>
@@ -151,18 +159,18 @@
       </ul>
     </section>
     <section class="connect-list">
-      <h2 class="main footer title-connect">Connect </h2>
+      <h2 class="footer title-main">Connect </h2>
       <hr />
       <form class="email-form" method="POST" action="https://form-data-dl.herokuapp.com/api/messages">
         <p>
           <label for="input-email"> </label>
           <input name="email" id="input-email" placeholder="Email" type="email">
         </p>
-        <button type="submit">
+        <button class="button button-footer" type="submit">
           Join
         </button>
       </form>
-      <ul class="list hidden-marker">
+      <ul class="hidden-marker">
         <li class="social-item">
           <a class='social-item' href="#">
             <img class="mail-img" src="./../../images/Facebook.svg" alt="facebook">
@@ -175,7 +183,7 @@
         </li>
         <li class="social-item">
           <a class='social-item' href="#">
-            <img class="mail-img" src="./../../images//Pinterest.svg" alt="pinterest">
+            <img class="mail-img" src="./../../images/Pinterest.svg" alt="pinterest">
           </a>
         </li>
         <li class="social-item">
@@ -187,27 +195,27 @@
     </section>
     <hr class="bottom line"/>
     <div class="rating">
-      <a class="company-rating" href="#"> Company Rating </a>
+      <a class="footer-link rating" href="#"> Company Rating </a>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
       <button class="star-button">
-        <img class="star-item" src="./../../images/Star.jpg" alt="star">
+        <img class="star-item" src="./../../images/Star.svg" alt="star">
       </button>
     </div>
-    <div class=footer-copyright> 
-      Copyright © 2018 Dlk • Design Life Kids 
+    <div class="footer-copyright"> 
+      Copyright © 2018 Dlk • Design Life Kids
     </div>
-    <a class="footer-designed" href="#"> Web Design — Direct Line Development </a>
+    <a class="footer-link design" href="#"> Web Design — Direct Line Development </a>
   </footer>
 </body>
 </html>

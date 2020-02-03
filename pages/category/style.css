@@ -1,0 +1,36 @@
+/* title */
+.category-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+}  
+
+.description{
+  font-size: 38px;
+  line-height: 46px;
+}
+
+/* product category */
+.category-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: aqua;
+}
+
+/* product descriptiom text */
+.description-text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+

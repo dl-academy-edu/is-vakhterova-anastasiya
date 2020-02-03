@@ -1,0 +1,108 @@
+
+/* poster */
+
+.poster {
+  background-color: #EEE4DB;;
+}
+
+.poster-button {
+  background-color: #EEE4DB; 
+  border: none;
+}
+
+.poster-page {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05)
+}
+
+.poster-title {
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 110%;
+color:#1E0606 ;
+}
+
+.poster-text {
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px; 
+  color: #1E0606;
+}
+
+.underpost-text{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color:#C29974;
+  text-transform: uppercase
+}
+
+/* category product */
+
+.category-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  text-transform: uppercase;
+}
+
+.category-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: aqua;
+  }
+
+
+    /*button */
+  
+.button-list {
+  background-color: rgba(112, 187, 220, 0.2);
+  padding: 0;
+  border: none;
+}  
+
+.button-text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+
+.delivery-button {
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.delivery {
+  font-weight: bold;
+  }
+
+
