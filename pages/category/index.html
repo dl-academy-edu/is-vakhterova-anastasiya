@@ -3,44 +3,48 @@
 <head>
   <meta charset=UTF-8>
   <title>Category Products</title>
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Montserrat:400,600,700,800|Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css>
   <link rel="stylesheet" href="./../../common.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
-    <nav class="site-nav">
+    <div class="container header-content">
       <a href="./../../index.html">
         <img class="header-logo" src="./../../images/logo.jpg" alt="logo">
       </a>
-      <ul class="list hidden-marker">
-        <li> 
-          <a class="nav-item" href="#">Blog </a> 
-        </li>
-        <li> 
-          <a class="nav-item" href="#">Catalog </a>
-        </li>
-        <li>
-          <a class="nav-item" href="#">About Us </a> 
-        </li>
-      </ul>
-      <ul class="list hidden-marker">
-        <li> 
-          <button class="search-button"> 
-          <img class="search-img" src="./../../images/search.svg" alt="search">
-          </button>
-        </li>
-        <li> 
-          <a class="nav-item link-contact" href="./../сontact/index.html">Contact Us</a> 
-        </li>
-      </ul>
-    </nav>
+      <nav class="header-nav">
+        <ul class="hidden-marker header-link-list ">
+          <li>
+            <a class="nav-item" href="./../blog/index.html"> blog </a>
+          </li>
+          <li>
+            <a class="nav-item" href="./../category/index.html"> catalog </a>
+          </li>
+          <li>
+            <a class="nav-item" href="#"> about Us </a>
+          </li>
+        </ul>
+        <ul class="hidden-marker header-main-contact">
+          <li>
+            <button class="search-button header-list-seacrh">
+              <img class="search-img" src="./../../images/search.svg" alt="search">
+            </button>
+          </li>
+          <li>
+            <a class="nav-item link-contact" href="./../сontact/index.html"> Contact Us </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main class="main category-products">
+  <main class="category-products container">
     <h1 class="category-title">Category Products</h1>
-    <div class="category products-breadcrumbs">
-      <ol class="breadcrumbs">
+    <div class="products-breadcrumbs">
+      <ol class="breadcrumbs hidden-marker ">
         <li>
           <a class="breadcrumbs-item" href="./../../index.html"> Home </a>
         </li>
@@ -52,170 +56,183 @@
     </div>
     <section class="category">
       <h2 class="visually-hidden"> Category Products </h2>
-      <div class="category-list">
-        <ul class="list hidden-marker">
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-1.jpg" alt="APPAREL KIDS">
-              <div class="category-text">Apparel kids</div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-2.jpg" alt="HOLIDAY SHOP">
-              <div class="category-text">Holiday shop </div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="./../Toys/index.html">
-              <img class="category-img" src="./../../images/category-3.jpg" alt="TOYS">
-              <div class="category-text">Toys</div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-4.jpg" alt="ACCESSORIES">
-              <div class="category-text">Accessories</div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-5.jpg" alt="SALE">
-              <div class="category-text">Sale</div>
-            </a>
-          </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-img" src="./../../images/category-6.jpg" alt="APPAREL ADULTS">
-              <div class="category-text">Apparel adults</div>
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="category-list">
+          <ul class="list hidden-marker">
+            <li class="category-item">
+              <a class="category-link" href="#">
+                <img class="category-img" src="./../../images/category-1.jpg" alt="APPAREL KIDS">
+                <div class="category-text">Apparel kids</div>
+              </a>
+            </li>
+            <li class="category-item">
+              <a class="category-link" href="#">
+                <img class="category-img" src="./../../images/category-2.jpg" alt="HOLIDAY SHOP">
+                <div class="category-text">Holiday shop </div>
+              </a>
+            </li>
+            <li class="category-item">
+              <a class="category-link" href="./../Toys/index.html">
+                <img class="category-img" src="./../../images/category-3.jpg" alt="TOYS">
+                <div class="category-text">Toys</div>
+              </a>
+            </li>
+            <li class="category-item">
+              <a class="category-link" href="#">
+                <img class="category-img" src="./../../images/category-4.jpg" alt="ACCESSORIES">
+                <div class="category-text">Accessories</div>
+              </a>
+            </li>
+            <li class="category-item">
+              <a class="category-link" href="#">
+                <img class="category-img" src="./../../images/category-5.jpg" alt="SALE">
+                <div class="category-text">Sale</div>
+              </a>
+            </li>
+            <li class="category-item">
+              <a class="category-link" href="#">
+                <img class="category-img" src="./../../images/category-6.jpg" alt="APPAREL ADULTS">
+                <div class="category-text">Apparel adults</div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
-    <section class="product-description">
-      <h2 class="category-title description">Product Description </h2>
-      <p class="descriprion-text"> 
-        Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even
-        bathe her, just like a little sister. 
-      </p>
-      <p class="descriprion-text" >
-        A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an
-        excellent choice for a gift for a girl from 4 years old.
-      </p>
-      <p class="descriprion-text">
-        The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and
-        elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
-      </p>
+      </section>
+    <section class="container">
+      <div class="product-description">
+        <h2 class="category-title description">Product Description </h2>
+        <div class="descriprion-text">
+          Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even
+          bathe her, just like a little sister.
+        </div>
+        <div class="descriprion-text">
+          A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an
+          excellent choice for a gift for a girl from 4 years old.
+        </div>
+        <div class="descriprion-text text-margin">
+          The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and
+          elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <section class="navigation-list">
-      <h2 class="footer title-main"> Navigation</h2>
-      <hr />
-      <ul class="hidden-marker">
-        <li class="footer-item">
-          <a class="footer-link" href="#"> About Us</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link" href="#"> Blog </a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link" href="#">Design Services </a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link" href="#">Featured On </a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link" href="#">2018 Holiday Catalog </a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link" href="#">Shop By Designer </a>
-        </li>
-      </ul>
-    </section>
-    <section class="information-list">
-      <h2 class="footer title-main">Customer Information</h2>
-      <hr />
-      <ul class="hidden-marker">
-        <li class="footer_item">
-          <a class="footer-link" href="#">Contact Us</a>
-        </li>
-        <li class="footer_item">
-          <a class="footer-link" href="#">Sale Exclusions</a>
-        </li>
-        <li class="footer_item">
-          <a class="footer-link" href="#">Shipping & Returns</a>
-        </li>
-        <li class="footer_item">
-          <a class="footer-link" href="#">Terms & Conditions</a>
-        </li>
-        <li class="footer_item">
-          <a class="footer-link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer_item">
-          <a class="footer-link" href="#">Search</a>
-        </li>
-      </ul>
-    </section>
-    <section class="connect-list">
-      <h2 class="footer title-main">Connect </h2>
-      <hr />
-      <form class="email-form" method="POST" action="https://form-data-dl.herokuapp.com/api/messages">
-        <p>
-          <label for="input-email"> </label>
-          <input name="email" id="input-email" placeholder="Email" type="email">
-        </p>
-        <button class="button button-footer" type="submit">
-          Join
-        </button>
-      </form>
-      <ul class="hidden-marker">
-        <li class="social-item">
-          <a class='social-item' href="#">
-            <img class="mail-img" src="./../../images/Facebook.svg" alt="facebook">
-          </a>
-        </li>
-        <li class="social-item">
-          <a class='social-item' href="#">
-            <img class="mail-img" src="./../../images/Twitter.svg" alt="twitter">
-          </a>
-        </li>
-        <li class="social-item">
-          <a class='social-item' href="#">
-            <img class="mail-img" src="./../../images/Pinterest.svg" alt="pinterest">
-          </a>
-        </li>
-        <li class="social-item">
-          <a class='social-item' href="#">
-            <img class="mail-img" src="./../../images/Instagram.svg" alt="instagram"> 
-          </a>
-        </li>
-      </ul>
-    </section>
-    <hr class="bottom line"/>
-    <div class="rating">
-      <a class="footer-link rating" href="#"> Company Rating </a>
-      <button class="star-button">
-        <img class="star-item" src="./../../images/Star.svg" alt="star">
-      </button>
-      <button class="star-button">
-        <img class="star-item" src="./../../images/Star.svg" alt="star">
-      </button>
-      <button class="star-button">
-        <img class="star-item" src="./../../images/Star.svg" alt="star">
-      </button>
-      <button class="star-button">
-        <img class="star-item" src="./../../images/Star.svg" alt="star">
-      </button>
-      <button class="star-button">
-        <img class="star-item" src="./../../images/Star.svg" alt="star">
-      </button>
+    <div class="footer-content container">
+      <div class="main-footer-content">
+        <section class="navigation-list">
+          <h2 class="footer title-main"> Navigation</h2>
+          <hr class="short-line"> 
+          <ul class="hidden-marker">
+            <li class="footer-item">
+              <a class="footer-link" href="#"> About Us</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#"> Blog </a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Design Services </a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Featured On </a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">2018 Holiday Catalog </a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Shop By Designer </a>
+            </li>
+          </ul>
+        </section>
+        <section class="information-list">
+          <h2 class="footer title-main">Customer Information</h2>
+          <hr class="short-line"/>
+          <ul class="hidden-marker">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Contact Us</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Sale Exclusions</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Shipping & Returns</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Terms & Conditions</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Search</a>
+            </li>
+          </ul>
+        </section>
+        <section class="connect-list">
+          <h2 class="footer title-main">Connect </h2>
+          <hr class="short-line" />
+          <form class="email-form" method="POST" action="https://form-data-dl.herokuapp.com/api/messages">
+            <p class="connect-form">
+              <label for="input-email"> </label>
+              <input class="input-email-form" name="email" id="input-email" placeholder="Email">
+            </p>
+            <button class="button button-footer" type="submit">
+              Join
+            </button>
+          </form>
+          <ul class="hidden-marker social-list">
+            <li class="social-item">
+              <a class='social-item' href="#">
+                <img class="mail-img" src="./../../images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class='social-item' href="#">
+                <img class="mail-img" src="./../../images/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class='social-item' href="#">
+                <img class="mail-img" src="./../../images/pinterest.svg" alt="pinterest">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class='social-item' href="#">
+                <img class="mail-img" src="./../../images/instagram.svg" alt="instagram">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer-line"> 
+      <hr class="bottom-line">
+      </div>
+      <div class="general-footer-information">
+        <div class="company-rating">
+          <a class="footer-link rating" href="#"> Company Rating </a>
+          <button class="star-button">
+            <img class="star-item" src="./../../images/star.svg" alt="star">
+          </button>
+          <button class="star-button">
+            <img class="star-item" src="./../../images/star.svg" alt="star">
+          </button>
+          <button class="star-button">
+            <img class="star-item" src="./../../images/star.svg" alt="star">
+          </button>
+          <button class="star-button">
+            <img class="star-item" src="./../../images/star.svg" alt="star">
+          </button>
+          <button class="star-button">
+            <img class="star-item" src="./../../images/star.svg" alt="star">
+          </button>
+        </div>
+        <div class="footer-copyright">
+          Copyright © 2018 Dlk • Design Life Kids
+        </div>
+        <a class="footer-link design" href="#"> Web Design — Direct Line Development </a>
+      </div>
     </div>
-    <div class="footer-copyright"> 
-      Copyright © 2018 Dlk • Design Life Kids
-    </div>
-    <a class="footer-link design" href="#"> Web Design — Direct Line Development </a>
   </footer>
 </body>
 </html>
+

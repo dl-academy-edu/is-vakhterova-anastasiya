@@ -1,84 +1,162 @@
 /* title*/
 
 .toy-title {
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 40px;
-line-height: 49px;
-text-transform: uppercase;   
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 15px;
 }
 
 /*filters*/
+.filters {
+  background-color: rgba(125, 151, 218, 0.2);
+}
+
+.toys-form {
+  display: flex;
+  flex-direction: column;
+}
 
 fieldset {
-  border:0 none;
+  border: 0 none;
 }
 
 .filter-form {
-  background-color: rgba(125, 151, 218, 0.2);
   border: none;
+  display: flex;
+  padding-top: 42px;
 }
 
 .filter-name {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  color: #1E0606; 
+  color: #1e0606;
+  margin-bottom: 15px;
+}
+
+.cost-line {
+  width: 188px;
 }
 
 .scroll {
-font-family: 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-color: #1E0606; 
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
 }
 
-.item{
+.toys {
+  margin-top: 60px;
+}
+
+.item {
   font-weight: normal;
 }
 
+.amount-item {
+  background-color: white;
+  border: none;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 80px;
+  height: 35px;
+  font-weight: normal;
+}
+
+.range {
+  display: flex;
+}
+
+.fieldset-amount {
+  margin-right: 48px;
+}
+.cost-filter {
+  display: flex;
+  flex-direction: column;
+  margin-right: 83px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cost-scroll {
+  display: flex;
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.scroll-up {
+  display: flex;
+  margin-right: 169px;
+}
+
+.fieldset-color {
+  margin-right: 110px;
+}
+
+.marker {
+  margin-top: 0px;
+}
+
+.fieldset-delivery {
+  margin-right: 57px;
+}
+
+.filter-form-button {
+  display: flex;
+  margin-bottom: 135px;
+  margin-top: 37px;
+}
 
 /* products list */
+
+.toys-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 16px;
+}
+
+.price {
+  margin-bottom: 25px;
+}
+
+.toy-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
 .product-description {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-  color: #1E0606;
+  color: #1e0606;
+  margin-bottom: 15px;
+  margin-top: 28px;
 }
 
 .product-price {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  color: #1E0606;
-}
-
-/* pagination */
-.page {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #1E0606;
-}
-
-.current {
-  color: #C29974;
-}
-
-.page-change {
-  padding: 0;
-  border: none;
-  background-color: transparent;
+  color: #1e0606;
 }

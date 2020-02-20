@@ -6,12 +6,10 @@
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 15px;
 }  
 
-.description{
-  font-size: 38px;
-  line-height: 46px;
-}
 
 /* product category */
 .category-text {
@@ -21,16 +19,71 @@
   font-size: 26px;
   line-height: 32px;
   text-transform: uppercase;
-  color: aqua;
+  color: white;
+  position: absolute;
+  top: 133px;
+  left: 141px;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  text-align: center;
+
 }
 
-/* product descriptiom text */
-.description-text {
+.category-item {
+  width: 280px;
+  padding-right: 10px;
+  position: relative; 
+  margin-right: 20px;
+  margin-bottom:23px ;
+}
+
+.category-item:nth-child(4) {
+  margin-left: 195px;
+}
+
+.category-list {
+  margin-top: 0px;
+  margin-left: -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* section product descriptiom */
+
+.product-description {   /*section*/
+width: 680px;
+margin-left: 177px;
+margin-bottom: 60px;
+
+}
+
+.description {           /*title*/
+  margin-bottom:25px ;
+  margin-top: 21px;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.descriprion-text {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
+  width: 680px;
+  margin-bottom: 16px;
 }
 
+.text-margin {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
