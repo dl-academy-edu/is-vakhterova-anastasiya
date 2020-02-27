@@ -34,6 +34,21 @@
   margin-bottom: 10px;
 }
 
+.blog-link:hover .blog-heading, .blog-link:focus .blog-heading {
+  text-decoration-line: underline;
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+.blog-link:focus .blog-heading  {
+  outline: none;
+}
+
+.blog-link:active .blog-heading {
+  text-decoration-line: underline;
+  pointer-events: visible;
+}
+
 .blog-img {
   margin-bottom: 18px;
 }
@@ -67,4 +82,11 @@
   line-height: 25px;
   width: 380px;
   margin-bottom: 21px;
+  color: #1E0606;
+}
+
+.pages-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
 }

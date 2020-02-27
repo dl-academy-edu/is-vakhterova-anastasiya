@@ -46,15 +46,28 @@ html {
   font-size: 14px;
   line-height: 16px;
   margin-top: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 1px;
   color: #1e0606;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
+
+.proverka {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 22px;
+  margin-bottom: 5px;
+  color: #1e0606;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+
 .form-input {
-  line-height: 50px;
+  line-height: 47px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -63,6 +76,7 @@ html {
   font-size: 18px;
   color: #1e0606;
   padding-left: 20px;
+  margin-top: 6px;
 }
 
 .form-chechbox {
@@ -78,7 +92,7 @@ html {
 .form-textarea {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .form-row {
@@ -116,6 +130,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header-link-list {
@@ -123,6 +138,7 @@ html {
   justify-content: space-between;
   padding-left: 0px;
   margin-left: 60px;
+  flex-wrap: wrap;
 }
 
 .header-item {
@@ -141,6 +157,18 @@ html {
   line-height: 19px;
   text-transform: uppercase;
   margin-right: 20px;
+}
+
+.nav-item:hover,.nav-item:focus {
+  opacity: 50%;
+}
+
+.nav-item:active {
+  opacity: 20%;
+}
+
+.nav-item:focus {
+  outline: none;
 }
 
 .link-contact {
@@ -166,6 +194,31 @@ html {
   background-color: white;
 }
 
+.search-button:hover,.search-button:focus {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.search-button:active {
+  opacity: 20%;
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+.header-logo:hover,.header-logo:focus {
+  opacity: 50%;
+}
+
+.header-logo:active {
+  opacity: 20%;
+}
+
+.header-logo:focus {
+  outline: none;
+}
+
 /* button */
 
 .button {
@@ -179,6 +232,23 @@ html {
   text-transform: uppercase;
   padding: 9px 22px;
   border: none;
+  transition: 0.3s;
+}
+
+.button:hover, .button:focus {
+  background-color: #c29974;
+}
+
+.button:active {
+  background-color: #cfaf91;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:disabled {
+  background-color: #c1c1c1;
 }
 
 /* breadcrums */
@@ -220,6 +290,7 @@ html {
 
 .main-footer-content {
   display: flex;
+  margin-bottom: 11px;
 }
 
 .general-footer-information {
@@ -230,7 +301,7 @@ html {
 .footer-line {
   background-color: #666666;
   width: 1180px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .title-main {
@@ -254,6 +325,19 @@ html {
   color: #ffffff;
 }
 
+.footer-item:hover,.footer-item:focus {
+  opacity: 0.5;
+}
+
+.footer-item:active {
+  opacity: 0.5;
+  cursor: none;
+}
+
+.footer-item:focus {
+  outline: none;
+}
+
 .footer-copyright {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -266,11 +350,28 @@ html {
 
 .design {
   color: #a2a2a2;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #a2a2a2;
+}
+
+.design:hover {
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.design:active {
+  text-decoration-line: underline;
+  color: #ffffff;
+  cursor: none;
 }
 
 .star-button {
   padding: 0;
-  margin-right: 1px;
+  margin-right: 6px;
   border: none;
   background-color: transparent;
 }
@@ -306,11 +407,56 @@ html {
   margin-right: 5px;
 }
 
+.social-item:hover,.social-item:focus {
+  opacity: 0.5;
+}
+
+.social-item:focus {
+  outline: none;
+}
+
+.social-item:active {
+  opacity: 0.5;
+  cursor: none;
+}
+
+/* не получилось сделать состояние hover для рейтинга */
 .rating {
   margin-right: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2px;
 }
+
 .company-rating {
-  margin-right: 157px;
+  margin-right: 151px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 0px;
+  margin-bottom: -3px;
+}
+
+.star-list {
+  list-style: none;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: -3px;
+  margin-top: 2px;
+}
+
+.star {
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 .email-form {
@@ -327,9 +473,23 @@ html {
   border: none;
 }
 
+.input-email-form:hover {
+  border: 1px solid #fffdfd;
+  cursor: pointer;
+}
+
+/* не получилось сделать состояние клика на форму имейл
+.input-email-form::placeholder:active {
+  border: 1px solid #FFFDFD;
+  cursor: none;
+  background-color: white;
+}
+*/
+
 .button-footer {
   height: 40px;
   width: 81px;
+  cursor: pointer;
 }
 
 placeholder {
@@ -355,6 +515,47 @@ input[placeholder="Email"] {
   background-color: white;
   border: none;
   padding: 0px;
+  padding: 0;
+  border: none;
+}
+
+.change-next {
+  background-image: url(./images/next1.png);
+  width: 18px;
+  height: 30px;
+}
+
+.change-next:hover,.change-next:focus {
+  background-image: url(./images/next2.png);
+  cursor: pointer;
+}
+
+.change-next:active {
+  background-image: url(./images/next3.png);
+}
+
+.change-next:focus {
+  outline: none;
+}
+
+.change-back {
+  background-image: url(./images/next1.png);
+  width: 18px;
+  height: 30px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.change-back:hover,.change-back:focus {
+  background-image: url(./images/next2.png);
+  cursor: pointer;
+}
+
+.change-back:active {
+  background-image: url(./images/next3.png);
+}
+
+.change-back:focus {
+  outline: none;
 }
 
 .pagination {
@@ -389,4 +590,12 @@ input[placeholder="Email"] {
 
 .current {
   color: #c29974;
+}
+
+.page:hover, .page:focus {
+  opacity: 0.5;
+}
+
+.page:focus {
+  outline: none;
 }

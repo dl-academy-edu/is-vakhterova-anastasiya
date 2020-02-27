@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset=UTF-8>
   <title>Toy for kids</title>
@@ -10,11 +11,12 @@
   <link rel="stylesheet" href="./../../common.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header">
     <div class="container header-content">
-      <a href="./../../index.html">
-        <img class="header-logo" src="./../../images/logo.jpg" alt="logo">
+      <a class="header-logo" href="./../../index.html">
+        <img class="logo" src="images./../../../images/logo.jpg" alt="logo" width="100" height="52">
       </a>
       <nav class="header-nav">
         <ul class="hidden-marker header-link-list ">
@@ -31,7 +33,7 @@
         <ul class="hidden-marker header-main-contact">
           <li>
             <button class="search-button header-list-seacrh">
-              <img class="search-img" src="./../../images/search.svg" alt="search">
+              <img class="search-img" src="./../../images/search.svg" alt="search" width="24" height="24">
             </button>
           </li>
           <li>
@@ -57,7 +59,7 @@
         <li>
           <img class="breadcrumbs-item" src="./../../images/bread.svg" alt="&#62;">
         </li>
-        <li class= "breadcrumbs-item active">Toys </li>
+        <li class="breadcrumbs-item active">Toys </li>
       </ol>
     </div>
     <section class="filters">
@@ -75,27 +77,31 @@
           <fieldset class="fieldset-color">
             <legend class="filter-name"> Color </legend>
             <ul class="marker hidden-marker">
-              <li>
+              <li class="color-item">
                 <label class="filter-name item">
-                  <input class="filter-name" name="black" type="checkbox">
+                  <input class="filter-name visually-hidden" name="black" type="checkbox">
+                  <span class="filter-name-indicator"></span>
                   Black
                 </label>
               </li>
-              <li>
+              <li class="color-item">
                 <label class="filter-name item">
-                  <input class="filter-name item" name="blue" type="checkbox">
+                  <input class="filter-name item visually-hidden" name="blue" type="checkbox">
+                  <span class="filter-name-indicator"></span>
                   Blue
                 </label>
               </li>
-              <li>
+              <li class="color-item">
                 <label class="filter-name item">
-                  <input class="filter-name item" name="green" type="checkbox">
+                  <input class="filter-name item visually-hidden" name="green" type="checkbox">
+                  <span class="filter-name-indicator"></span>
                   Green
                 </label>
               </li>
-              <li>
+              <li class="color-item">
                 <label class="filter-name item">
-                  <input class="filter-name item" name="white" type="checkbox">
+                  <input class="filter-name item visually-hidden" name="white" type="checkbox">
+                  <span class="filter-name-indicator"></span>
                   White
                 </label>
               </li>
@@ -104,38 +110,59 @@
           <fieldset class="fieldset-delivery">
             <legend class="filter-name"> Delivery </legend>
             <ul class="marker hidden-marker">
-              <li>
+              <li class="delivery-item">
                 <label class="filter-name item">
-                  <input class="filter-name item" name="method" type="radio">
+                  <input class="form-radio filter-name item visually-hidden" name="method" type="radio">
+                  <span class="filter-delivery-indicator"></span>
                   Free shipping
                 </label>
               </li>
-              <li>
+              <li class="delivery-item">
                 <label class="filter-name item">
-                  <input class="filter-name item" name="method" type="radio">
+                  <input class="form-radio filter-name item visually-hidden" name="method" type="radio">
+                  <span class="filter-delivery-indicator"></span>
                   Fast shipping
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="fieldset-amount">
-            <legend class="filter-name">Amount</legend>
-            <div class="range">
-              <button class="filter-name amount-item" type="submit">0-5 </button>
-              <button class="filter-name amount-item" type="submit">10-20 </button>
-              <button class="filter-name amount-item" type="submit">20-50 </button>
-            </div>
+            <legend class="filter-name amount-margin">Amount</legend>
+            <ul class="range-list hidden-marker ">
+              <li class="amount-button ">
+                <label class="hide-radio">
+                  <input class="amount visually-hidden" name="method" type="radio">
+                  <span class="filter-amount-indicator"></span>
+                  0-5
+                </label>
+              </li>
+              <li class="amount-button">
+                <label class="hide-radio">
+                  <input class="amount visually-hidden" name="method" type="radio">
+                  <span class="filter-amount-indicator"></span>
+                  10-20
+                </label>
+              </li>
+              <li class="amount-button">
+                <label class="hide-radio">
+                  <input class="amount visually-hidden" name="method" type="radio">
+                  <span class="filter-amount-indicator"></span>
+                  20-50
+                </label>
+              </li>
+            </ul>
           </fieldset>
-          <button class="button filter-form-button" type="submit"> Apply </button>
+          <button disabled class="button filter-form-button" type="submit"> Apply </button>
         </form>
       </div>
     </section>
     <div class="toys container">
-      <ul class="toys-list hidden-marker"> 
+      <ul class="toys-list hidden-marker">
         <li class="toy-item">
-            <a class="" href="#">
-              <img class="toys-img" src="./../../images/shark.jpg" alt="shark">
-            </a>
+          <a class="learn-more-link" href="#">
+            <img class="toys-img" src="./../../images/shark.jpg" alt="shark" width="380" height="385">
+            <div class="learn-more"> learn more </div>
+          </a>
           <div class="product-description">
             SHARKY BEAN BAG CHAIR COVER
           </div>
@@ -144,10 +171,11 @@
           </div>
         </li>
         <li class="toy-item">
-            <a class="" href="#">
-              <img class="toys-img" src="./../../images/frames.jpg" alt="deco frames">
-            </a>
-          <div class="product-description" >
+          <a class="learn-more-link" href="#">
+            <img class="toys-img" src="./../../images/frames.jpg" alt="deco frames" width="380" height="385">
+            <div class="learn-more"> learn more </div>
+          </a>
+          <div class="product-description">
             BRASS DECO FRAMES
           </div>
           <div class="price">
@@ -155,9 +183,10 @@
           </div>
         </li>
         <li class="toy-item">
-            <a class="" href="#">
-              <img class="toys-img" src="./../../images/apron.jpg" alt="apron">
-            </a>
+          <a class="learn-more-link" href="#">
+            <img class="toys-img" src="./../../images/apron.jpg" alt="apron" width="380" height="385">
+            <div class="learn-more"> learn more </div>
+          </a>
           <div class="product-description">
             CIBO FULL APRON
           </div>
@@ -166,9 +195,10 @@
           </div>
         </li>
         <li class="toy-item">
-            <a class="" href="#">
-              <img class="toys-img" src="./../../images/machine.jpg" alt="gumball machine">
-            </a>
+          <a class="learn-more-link" href="#">
+            <img class="toys-img" src="./../../images/machine.jpg" alt="gumball machine" width="380" height="385">
+            <div class="learn-more"> learn more </div>
+          </a>
           <div class="product-description">
             GATCHA GATCHA GUMBALL MACHINE
           </div>
@@ -177,9 +207,10 @@
           </div>
         </li>
         <li class="toy-item">
-            <a class="" href="#">
-              <img class="toys-img" src="./../../images/candle.jpg" alt="candle">
-            </a>
+          <a class="learn-more-link" href="#">
+            <img class="toys-img" src="./../../images/candle.jpg" alt="candle" width="380" height="385">
+            <div class="learn-more"> learn more </div>
+          </a>
           <div class="product-description">
             CHRISTMAS ADVENT SCENTED CANDLE
           </div>
@@ -188,9 +219,10 @@
           </div>
         </li>
         <li class="toy-item">
-            <a class="" href="#">
-              <img class="toys-img" src="./../../images/spinning.jpg" alt="shark">
-            </a>
+          <a class="learn-more-link" href="#">
+            <img class="toys-img" src="./../../images/spinning.jpg" alt="shark" width="380" height="382">
+            <div class="learn-more"> learn more </div>
+          </a>
           <div class="product-description">
             TANGLE SPINNING TEA LIGHT
           </div>
@@ -201,10 +233,9 @@
       </ul>
     </div>
     <div class="page-block container">
-      <button class="page-change">
-        <img src="./../../images/vector_back.svg" alt="Back">
+      <button class="page-change change-next">
       </button>
-      <div class="pages"> 
+      <div class="pages">
         <ul class="hidden-marker pagination">
           <li class="pages-list">
             <a class="page current" href="#">1
@@ -224,7 +255,7 @@
           </li>
         </ul>
       </div>
-      <button class="page-change"> <img src="./../../images/vector_next.svg" alt="Next">
+      <button class="page-change change-next">
       </button>
     </div>
   </main>
@@ -233,7 +264,7 @@
       <div class="main-footer-content">
         <section class="navigation-list">
           <h2 class="footer title-main"> Navigation</h2>
-          <hr class="short-line"> 
+          <hr class="short-line">
           <ul class="hidden-marker">
             <li class="footer-item">
               <a class="footer-link" href="#"> About Us</a>
@@ -257,7 +288,7 @@
         </section>
         <section class="information-list">
           <h2 class="footer title-main">Customer Information</h2>
-          <hr class="short-line"/>
+          <hr class="short-line" />
           <ul class="hidden-marker">
             <li class="footer-item">
               <a class="footer-link" href="#">Contact Us</a>
@@ -294,29 +325,29 @@
           <ul class="hidden-marker social-list">
             <li class="social-item">
               <a class='social-item' href="#">
-                <img class="mail-img" src="./../../images/facebook.svg" alt="facebook">
+                <img class="mail-img" src="./../../images/facebook.svg" alt="facebook" width="30" height="30">
               </a>
             </li>
             <li class="social-item">
               <a class='social-item' href="#">
-                <img class="mail-img" src="./../../images/twitter.svg" alt="twitter">
+                <img class="mail-img" src="./../../images/twitter.svg" alt="twitter" width="30" height="30">
               </a>
             </li>
             <li class="social-item">
               <a class='social-item' href="#">
-                <img class="mail-img" src="./../../images/pinterest.svg" alt="pinterest">
+                <img class="mail-img" src="./../../images/pinterest.svg" alt="pinterest" width="30" height="30">
               </a>
             </li>
             <li class="social-item">
               <a class='social-item' href="#">
-                <img class="mail-img" src="./../../images/instagram.svg" alt="instagram">
+                <img class="mail-img" src="./../../images/instagram.svg" alt="instagram" width="30" height="30">
               </a>
             </li>
           </ul>
         </section>
       </div>
-      <div class="footer-line"> 
-      <hr class="bottom-line">
+      <div class="footer-line">
+        <hr class="bottom-line">
       </div>
       <div class="general-footer-information">
         <div class="company-rating">
@@ -345,4 +376,5 @@
     </div>
   </footer>
 </body>
+
 </html>

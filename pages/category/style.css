@@ -10,8 +10,8 @@
   margin-bottom: 15px;
 }  
 
-
 /* product category */
+
 .category-text {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -26,8 +26,18 @@
   transform: translate(-50%, -50%);
   align-items: center;
   text-align: center;
-
 }
+
+.category-text:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+  }
+
+  .category-text:active {
+  text-decoration-line: underline;
+  cursor: pointer;
+  }
+
 
 .category-item {
   width: 280px;
@@ -36,6 +46,31 @@
   margin-right: 20px;
   margin-bottom:23px ;
 }
+
+.background-first{
+  background-color: #DBE4DB;
+}
+
+.background-second {
+  background-color: rgba(186, 142, 107, 0.3);
+}
+
+.background-third {
+  background-color: #F8F2DA;;
+}
+
+.background-fourth{
+  background-color:  rgba(9, 3, 79, 0.17);
+}
+
+.background-fifth{
+  background-color: rgba(207, 68, 111, 0.25);;
+}
+
+.background-sixth{
+  background-color:  rgba(125, 151, 218, 0.2);;
+}
+
 
 .category-item:nth-child(4) {
   margin-left: 195px;

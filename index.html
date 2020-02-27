@@ -13,8 +13,8 @@
 <body>
   <header class="header">
     <div class="container header-content">
-      <a href="#">
-        <img class="header-logo" src="images/logo.jpg" alt="logo" width="100" height="52">
+      <a class="header-logo" href="#">
+        <img class="logo" src="images/logo.jpg" alt="logo" width="100" height="52">
       </a>
       <nav class="header-nav">
         <ul class="hidden-marker header-link-list ">
@@ -31,7 +31,7 @@
         <ul class="hidden-marker header-main-contact">
           <li>
             <button class="search-button header-list-seacrh">
-              <img class="search-img" src="images/search.svg" alt="search">
+              <img class="search-img" src="images/search.svg" alt="search" width="24" height="24">
             </button>
           </li>
           <li>
@@ -52,12 +52,12 @@
           <button class="button poster-link poster-link-js">EXPLORE NOW </button>
           <div class="poster-page"> 01 </div>
           <div class="poster-buttons">
-            <button class="poster-button"> </button>
+            <button class="poster-button first-slider"> </button>
             <button class="poster-button"> </button>
             <button class="poster-button"> </button>
             <button class="poster-button"> </button>
           </div>
-          <img class="poster-img" src="images/poster.png" alt="POSTER">
+          <img class="poster-img" src="images/poster.png" alt="POSTER" width="636" height="461">
           <div class="underpost-text">
           Free (continental) USA shipping on all orders of $100 USD or more!
           </div>
@@ -69,25 +69,25 @@
       <div class="container">
         <div class="main-category-product"> 
         <ul class="hidden-marker category-list">
-          <li class="category-item">
+          <li class="category-item background-first">
             <a class="category-link" href="#">
               <img class="category-img" src="images/category-1.jpg" alt="APPAREL KIDS"  width="280" height="270">
             </a>
             <div class="category-text"> Apparel kids </div>
           </li>
-          <li class="category-item">
+          <li class="category-item background-second">
             <a class="category-link" href="#">
               <img class="category-img" src="images/category-2.jpg" alt="HOLIDAY SHOP" width="280" height="270">
               <div class="category-text"> Holiday shop </div>
             </a>
           </li>
-          <li class="category-item">
+          <li class="category-item background-third">
             <a class="category-link" href="./pages/Toys/index.html">
               <img class="category-img" src="images/category-3.jpg" alt="TOYS" width="280" height="270">
               <div class="category-text">Toys</div>
             </a>
           </li>
-          <li class="category-item">
+          <li class="category-item background-fourth">
             <a class="category-link" href="#">
               <img class="category-img" src="images/category-4.jpg" alt="ACCESSORIES" width="280" height="270">
               <div class="category-text"> Accessories </div>
@@ -111,7 +111,7 @@
     </section>
     <section class="main-delivery container">
       <h2 class="visually-hidden">DELIVERY</h2>
-      <img class="delivery-img" src="images/delivery.jpg" alt="delivery" width="480" height="559">
+      <img class="delivery-img background-fifth" src="images/delivery.jpg" alt="delivery" width="480" height="559">
       <div class="dilevery-block">
         <div class="section-title delivery-title"> Delivery</div>
         <div class="main-delivey-button">
@@ -246,22 +246,22 @@
           <ul class="hidden-marker social-list">
             <li class="social-item">
               <a class='social-item' href="#">
-                <img class="mail-img" src="images/facebook.svg" alt="facebook">
+                <img class="mail-img" src="images/facebook.svg" alt="facebook" width="30" height="30">
               </a>
             </li>
             <li class="social-item">
               <a class='social-item' href="#">
-                <img class="mail-img" src="images/twitter.svg" alt="twitter">
+                <img class="mail-img" src="images/twitter.svg" alt="twitter"  width="30" height="30">
               </a>
             </li>
             <li class="social-item">
               <a class='social-item' href="#">
-                <img class="mail-img" src="images/pinterest.svg" alt="pinterest">
+                <img class="mail-img" src="images/pinterest.svg" alt="pinterest"  width="30" height="30">
               </a>
             </li>
             <li class="social-item">
               <a class='social-item' href="#">
-                <img class="mail-img" src="images/instagram.svg" alt="instagram">
+                <img class="mail-img" src="images/instagram.svg" alt="instagram"  width="30" height="30">
               </a>
             </li>
           </ul>
@@ -316,9 +316,10 @@
         <label class="form-label" for="input-massage"> Message </label>
         <textarea class="textarea-massage" name="message" id="input-massage" cols="30" rows="10"> </textarea>
       </div>
-      <fieldset class="form-chechbox">
-        <input class="chechbox form-input" id="input-accept" name="accept" type="checkbox">
-        <label class="chechbox form-label" for="input-accept">
+      <fieldset class="form-click">
+        <label class="checkbox form-label">
+          <input class="checkbox-margin form-input visually-hidden" name="accept" type="checkbox">
+          <span class="checkbox-indicator"> </span>
           By clicking on the button, you consent to the processing of your personal data
         </label>
       </fieldset>
@@ -330,5 +331,3 @@
   <script src="script.js"> </script>
 </body>
 </html>
-
-

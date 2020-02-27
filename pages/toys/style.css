@@ -38,11 +38,44 @@ fieldset {
   font-size: 16px;
   line-height: 22px;
   color: #1e0606;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
+/*cost scroll*/
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 4px;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  border: 8.35px solid #C29974;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #FFFFFF;;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9px;
+  }
+
+  input[type=range]:focus {
+  outline: none;
+  }
+
+  input[type=range]::-webkit-range-track {
+  background: none;
+  border: none;
+  }
+
+/*opacity вешается и на линию и на круг,как убрать с круга?*/
 .cost-line {
+  -webkit-appearance: none;
   width: 188px;
+  margin-top: 13px;
+  background-color: #000000;
+  opacity: 0.5;
+  margin-left: 5px;
 }
 
 .scroll {
@@ -54,31 +87,10 @@ fieldset {
   color: #1e0606;
 }
 
-.toys {
-  margin-top: 60px;
-}
-
-.item {
-  font-weight: normal;
-}
-
-.amount-item {
-  background-color: white;
-  border: none;
-  padding-right: 0px;
-  padding-left: 0px;
-  width: 80px;
-  height: 35px;
-  font-weight: normal;
-}
-
 .range {
   display: flex;
 }
 
-.fieldset-amount {
-  margin-right: 48px;
-}
 .cost-filter {
   display: flex;
   flex-direction: column;
@@ -88,7 +100,7 @@ fieldset {
 
 .cost-scroll {
   display: flex;
-  margin-top: 6px;
+  margin-top: 17px;
   font-size: 16px;
   line-height: 22px;
   font-family: "Open Sans", sans-serif;
@@ -99,16 +111,169 @@ fieldset {
   margin-right: 169px;
 }
 
-.fieldset-color {
-  margin-right: 110px;
-}
-
 .marker {
   margin-top: 0px;
 }
 
+/*checkbox*/
+
+.filter-name-indicator {
+  padding-right: 29px;
+  position: relative;
+}
+
+.filter-name-indicator::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  border: 2px solid #c29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: block;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.filter-name:checked + .filter-name-indicator::after {
+  content: "";
+  background-image: url(./../../images/checked.svg);
+  position: absolute;
+  width: 14.23px;
+  height: 14.64px;
+  margin-left: 3px;
+  margin-top: 0px;
+}
+
+.color-item {
+  margin-bottom: 15px;
+}
+
+.item {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.fieldset-color {
+  margin-right: 96px;
+}
+
+/*radio */
+
+.filter-delivery-indicator {
+  padding-right: 29px;
+  position: relative;
+}
+
+.filter-delivery-indicator::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c29974;
+  border-radius: 100%;
+}
+
+.filter-name:checked + .filter-delivery-indicator::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 20%;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #c29974;
+}
+.delivery-item {
+  margin-bottom: 12px;
+}
+
+.filter-name:hover, .filter-name:focus {
+  text-decoration-line: underline;
+}
+
 .fieldset-delivery {
-  margin-right: 57px;
+  margin-right: 45px;
+}
+
+/* amount radio, проблема с навешиванием состояний, не вышло */
+.amount-margin {
+  margin-bottom: 10px;
+}
+
+.hide-radio input[type="radio"] {
+  display: none;
+}
+
+.amount-button {
+  background-color: #f3d0db;
+  width: 80px;
+  height: 35px;
+}
+
+.fieldset-amount {
+  margin-right: 48px;
+}
+
+.hide-radio {
+  border: 1px;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-right: 17px;
+}
+
+.range-amount {
+  width: 80px;
+  height: 35px;
+  background-color: #f3d0db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.range-amount:hover {
+  background-color: #eddeeb;
+}
+
+.range-amount:active {
+  background-color: #f3d0db;
+}
+
+.range-list {
+  display: flex;
+  margin-top: 0px;
+}
+
+.filter-amount-indicator {
+  padding-right: 18px;
+  position: relative;
+}
+
+.filter-amount-indicator::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 35px;
+  opacity: 0;
+}
+
+.amount:checked + .filter-amount-indicator::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 20%;
+  width: 80px;
+  height: 35px;
+}
+
+.amount:hover {
+  background-color: #f3d0db;
 }
 
 .filter-form-button {
@@ -118,6 +283,10 @@ fieldset {
 }
 
 /* products list */
+
+.toys {
+  margin-top: 60px;
+}
 
 .toys-list {
   display: flex;
@@ -139,6 +308,7 @@ fieldset {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .product-description {
@@ -159,4 +329,35 @@ fieldset {
   font-size: 16px;
   line-height: 22px;
   color: #1e0606;
+}
+
+.learn-more {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: #1e0606;
+  text-transform: uppercase;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 88px;
+  left: 87px;
+  width: 207px;
+  height: 207px;
+  background-color: #e5eaf8;
+}
+
+.toy-item:hover .learn-more {
+  opacity: 0.9;
+  pointer-events: visible;
+}
+
+.toy-item:active .learn-more {
+  opacity: 0.67;
+  pointer-events: visible;
 }
