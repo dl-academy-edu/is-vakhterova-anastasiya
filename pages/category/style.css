@@ -28,16 +28,20 @@
   text-align: center;
 }
 
-.category-text:hover {
+.category-link:hover .category-text, .category-link:focus .category-text {
   text-decoration-line: underline;
+  pointer-events: visible;
   cursor: pointer;
-  }
+}
 
-  .category-text:active {
+.category-link:focus {
+  outline: none;
+}
+
+.category-link:active .category-text {
   text-decoration-line: underline;
-  cursor: pointer;
-  }
-
+  pointer-events: visible;
+}
 
 .category-item {
   width: 280px;

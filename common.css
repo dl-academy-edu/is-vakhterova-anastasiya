@@ -51,18 +51,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-}
-
-
-.proverka {
-  font-size: 14px;
-  line-height: 16px;
-  margin-top: 22px;
-  margin-bottom: 5px;
-  color: #1e0606;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  cursor: pointer;
 }
 
 
@@ -87,6 +76,8 @@ html {
 
 .textarea-massage {
   height: 150px;
+  margin-top: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .form-textarea {
@@ -232,7 +223,7 @@ html {
   text-transform: uppercase;
   padding: 9px 22px;
   border: none;
-  transition: 0.3s;
+  cursor: pointer;
 }
 
 .button:hover, .button:focus {
@@ -325,16 +316,16 @@ html {
   color: #ffffff;
 }
 
-.footer-item:hover,.footer-item:focus {
+.footer-link:hover,.footer-link:focus {
   opacity: 0.5;
 }
 
-.footer-item:active {
+.footer-link:active {
   opacity: 0.5;
   cursor: none;
 }
 
-.footer-item:focus {
+.footer-link:focus {
   outline: none;
 }
 
@@ -469,32 +460,12 @@ html {
 .input-email-form {
   width: 299px;
   height: 40px;
-  background: #666666;
-  border: none;
+  background-color: #666666;
+  border: 1px solid #666666; 
+  box-sizing:border-box;
+  cursor:pointer;
 }
 
-.input-email-form:hover {
-  border: 1px solid #fffdfd;
-  cursor: pointer;
-}
-
-/* не получилось сделать состояние клика на форму имейл
-.input-email-form::placeholder:active {
-  border: 1px solid #FFFDFD;
-  cursor: none;
-  background-color: white;
-}
-*/
-
-.button-footer {
-  height: 40px;
-  width: 81px;
-  cursor: pointer;
-}
-
-placeholder {
-  color: #ffffff;
-}
 
 .input-email-form::placeholder {
   color: #ebebeb;
@@ -506,6 +477,33 @@ input[placeholder="Email"] {
   line-height: 22px;
   font-family: "Open Sans", sans-serif;
 }
+
+.input-email-form:hover,.input-email-form:focus  {
+  border: 1px solid #FFFDFD;
+  box-sizing: border-box;
+  cursor: pointer;
+
+}
+
+.button-footer {
+  height: 40px;
+  width: 81px;
+  cursor: pointer;
+}
+
+
+/* не получилось сделать черный текст внутри формы при active*/
+
+.input-email-form:active {
+  border: 1px solid #666666;
+  cursor: none;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.input-email-form:focus {
+  outline: none;
+} 
 
 /* порядок страниц */
 

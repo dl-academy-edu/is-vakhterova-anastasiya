@@ -41,6 +41,18 @@ fieldset {
   margin-bottom: 12px;
 }
 
+
+.filter-item {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+  margin-bottom: 12px;
+  font-weight: normal;
+  cursor: pointer;
+}
 /*cost scroll*/
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -59,14 +71,15 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -9px;
   }
 
-  input[type=range]:focus {
-  outline: none;
-  }
-
   input[type=range]::-webkit-range-track {
   background: none;
   border: none;
   }
+
+  input[type=range]:hover {
+    opacity: 0.9;
+  }
+
 
 /*opacity вешается и на линию и на круг,как убрать с круга?*/
 .cost-line {
@@ -74,8 +87,8 @@ input[type=range]::-webkit-slider-thumb {
   width: 188px;
   margin-top: 13px;
   background-color: #000000;
-  opacity: 0.5;
   margin-left: 5px;
+  opacity: 0.5;
 }
 
 .scroll {
@@ -117,12 +130,12 @@ input[type=range]::-webkit-slider-thumb {
 
 /*checkbox*/
 
-.filter-name-indicator {
+.filter-item-indicator {
   padding-right: 29px;
   position: relative;
 }
 
-.filter-name-indicator::before {
+.filter-item-indicator::before {
   content: "";
   width: 19px;
   height: 19px;
@@ -135,7 +148,7 @@ input[type=range]::-webkit-slider-thumb {
   position: absolute;
 }
 
-.filter-name:checked + .filter-name-indicator::after {
+.filter-item:checked ~ .filter-item-indicator::after {
   content: "";
   background-image: url(./../../images/checked.svg);
   position: absolute;
@@ -145,14 +158,14 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 0px;
 }
 
+.filter-item:checked ~ .filter-item-text, .filter-item:hover ~ .filter-item-text, .filter-item:focus ~ .filter-item-text  {
+  text-decoration-line: underline;
+}
+
 .color-item {
   margin-bottom: 15px;
 }
 
-.item {
-  font-weight: normal;
-  cursor: pointer;
-}
 
 .fieldset-color {
   margin-right: 96px;
@@ -174,7 +187,7 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 100%;
 }
 
-.filter-name:checked + .filter-delivery-indicator::after {
+.filter-item:checked ~ .filter-delivery-indicator::after {
   content: "";
   position: absolute;
   left: 4px;
@@ -184,74 +197,31 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 100%;
   background-color: #c29974;
 }
-.delivery-item {
-  margin-bottom: 12px;
+
+.filter-item:checked ~ .filter-item-text, .filter-item:hover ~ .filter-item-text, .filter-item:focus ~ .filter-item-text  {
+  text-decoration-line: underline;
 }
 
-.filter-name:hover, .filter-name:focus {
-  text-decoration-line: underline;
+.delivery-item {
+  margin-bottom: 12px;
 }
 
 .fieldset-delivery {
   margin-right: 45px;
 }
 
-/* amount radio, проблема с навешиванием состояний, не вышло */
-.amount-margin {
-  margin-bottom: 10px;
-}
-
-.hide-radio input[type="radio"] {
-  display: none;
-}
-
-.amount-button {
-  background-color: #f3d0db;
-  width: 80px;
-  height: 35px;
-}
-
-.fieldset-amount {
-  margin-right: 48px;
-}
-
-.hide-radio {
-  border: 1px;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  padding-top: 6px;
-  padding-right: 17px;
-}
-
-.range-amount {
-  width: 80px;
-  height: 35px;
-  background-color: #f3d0db;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.range-amount:hover {
-  background-color: #eddeeb;
-}
-
-.range-amount:active {
-  background-color: #f3d0db;
-}
+/* amount radio */
 
 .range-list {
   display: flex;
   margin-top: 0px;
 }
 
+.amount-margin {
+  margin-bottom: 10px;
+}
+
 .filter-amount-indicator {
-  padding-right: 18px;
   position: relative;
 }
 
@@ -260,26 +230,56 @@ input[type=range]::-webkit-slider-thumb {
   position: absolute;
   width: 80px;
   height: 35px;
-  opacity: 0;
+  background-color: none
 }
 
-.amount:checked + .filter-amount-indicator::after {
+.amount:checked ~ .filter-amount-indicator::after {
   content: "";
   position: absolute;
-  left: 4px;
+  left: 0px;
   top: 20%;
   width: 80px;
   height: 35px;
 }
 
-.amount:hover {
-  background-color: #f3d0db;
+.hide-radio {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.filter-amount-text {
+  width: 80px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #1E0606;
+  background-color: #FFFFFF;
+}
+
+.amount:checked ~ .filter-amount-text, .amount:hover ~ .filter-amount-text, .amount:focus ~ .filter-amount-text  {
+  background-color: #EDDEEB;
+}
+
+.amount:checked ~ .filter-amount-text, .amount:active {
+  background-color:#F3D0DB;
+}
+
+.fieldset-amount { 
+  padding-right: 57px;
 }
 
 .filter-form-button {
   display: flex;
   margin-bottom: 135px;
-  margin-top: 37px;
+  margin-top: 39px;
 }
 
 /* products list */

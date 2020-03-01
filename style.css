@@ -43,7 +43,7 @@
 .poster-img {
   position: absolute;
   left: 445px;
-  bottom: 38px;
+  bottom: 40px;
 }
 
 .poster-button {
@@ -57,8 +57,8 @@
   margin: 11px;
 }
 
-.first-slider {
-  background-color: #725F5B;
+.active-block:not(:hover) {
+  background-color: #725F5B
 }
 
 .poster-button:hover,.poster-button:focus {
@@ -184,15 +184,20 @@
   transform: translate(-50%, -50%);
 }
 
-.category-text:hover {
+.category-link:hover .category-text, .category-link:focus .category-text {
   text-decoration-line: underline;
+  pointer-events: visible;
   cursor: pointer;
-  }
+}
 
-  .category-text:active {
+.category-link:focus {
+  outline: none;
+}
+
+.category-link:active .category-text {
   text-decoration-line: underline;
-  cursor: pointer;
-  }
+  pointer-events: visible;
+}
 
 .category-button {
   display: flex;
@@ -500,12 +505,13 @@
 
 /* form - hover, active, focus */
 
+
 .form-input:hover, .form-input:focus {
-  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-color: cornflowerblue;
 }
 
 .form-input:active {
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-color: crimson;
 }
 
 .form-input:focus {
@@ -513,11 +519,11 @@
 }
 
 .textarea-massage:hover, .textarea-massage:focus {
-  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-color: cornflowerblue;
 }
 
 .textarea-massage:active {
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-color: crimson;
 }
 
 .textarea-massage:focus {
@@ -553,4 +559,8 @@
   height: 14.64px;
   margin-left: 0px;
   margin-top: -1px;
+}
+
+.form-input:checked ~ .filter-item-text, .form-input:hover ~ .filter-item-text, .form-input:focus ~ .filter-item-text  {
+  text-decoration-line: underline;
 }

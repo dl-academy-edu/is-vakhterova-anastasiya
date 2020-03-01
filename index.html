@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -49,14 +49,14 @@
         <div class="slider-popular"> 
           <div class="poster-title"> THE OOH NOO COLLECTION </div>
           <div class="poster-text"> Designed in Slovenia </div>
-          <button class="button poster-link poster-link-js">EXPLORE NOW </button>
           <div class="poster-page"> 01 </div>
           <div class="poster-buttons">
-            <button class="poster-button first-slider"> </button>
+            <button class="poster-button active-block"> </button>
             <button class="poster-button"> </button>
             <button class="poster-button"> </button>
             <button class="poster-button"> </button>
           </div>
+          <button class="button poster-link poster-link-js">EXPLORE NOW </button>
           <img class="poster-img" src="images/poster.png" alt="POSTER" width="636" height="461">
           <div class="underpost-text">
           Free (continental) USA shipping on all orders of $100 USD or more!
@@ -72,8 +72,8 @@
           <li class="category-item background-first">
             <a class="category-link" href="#">
               <img class="category-img" src="images/category-1.jpg" alt="APPAREL KIDS"  width="280" height="270">
+              <div class="category-text"> Apparel kids </div>
             </a>
-            <div class="category-text"> Apparel kids </div>
           </li>
           <li class="category-item background-second">
             <a class="category-link" href="#">
@@ -320,7 +320,7 @@
         <label class="checkbox form-label">
           <input class="checkbox-margin form-input visually-hidden" name="accept" type="checkbox">
           <span class="checkbox-indicator"> </span>
-          By clicking on the button, you consent to the processing of your personal data
+          <span class="filter-item-text"> By clicking on the button, you consent to the processing of your personal data </span>
         </label>
       </fieldset>
       <button class="button modal-form-button" type="submit"> Submit </button>
