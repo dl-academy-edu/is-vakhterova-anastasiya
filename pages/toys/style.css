@@ -354,10 +354,19 @@ input[type=range]::-webkit-slider-thumb {
 
 .toy-item:hover .learn-more {
   opacity: 0.9;
-  pointer-events: visible;
+  cursor: pointer;
 }
 
 .toy-item:active .learn-more {
   opacity: 0.67;
-  pointer-events: visible;
+  cursor: pointer;
+}
+
+.learn-more-link:focus .learn-more {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.learn-more-link {
+  outline: none;
 }

@@ -40,7 +40,7 @@
   cursor: pointer;
 }
 
-.blog-link:focus .blog-heading  {
+.blog-link:focus  {
   outline: none;
 }
 

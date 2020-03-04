@@ -503,32 +503,6 @@
   outline: none;
 }
 
-/* form - hover, active, focus */
-
-
-.form-input:hover, .form-input:focus {
-  border-color: cornflowerblue;
-}
-
-.form-input:active {
-  border-color: crimson;
-}
-
-.form-input:focus {
-  outline: none;
-}
-
-.textarea-massage:hover, .textarea-massage:focus {
-  border-color: cornflowerblue;
-}
-
-.textarea-massage:active {
-  border-color: crimson;
-}
-
-.textarea-massage:focus {
-  outline: none;
-}
 
 /*checkbox */
 
