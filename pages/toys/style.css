@@ -352,18 +352,13 @@ input[type=range]::-webkit-slider-thumb {
   background-color: #e5eaf8;
 }
 
-.toy-item:hover .learn-more {
+.learn-more-link:hover .learn-more, .learn-more-link:focus .learn-more {
   opacity: 0.9;
   cursor: pointer;
 }
 
-.toy-item:active .learn-more {
-  opacity: 0.67;
-  cursor: pointer;
-}
-
-.learn-more-link:focus .learn-more {
-  opacity: 0.9;
+.learn-more-link:active .learn-more {
+  opacity:  0.67;
   cursor: pointer;
 }
 
